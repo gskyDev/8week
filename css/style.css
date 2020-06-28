@@ -15,17 +15,26 @@ body {
 }
 .content {
     width: 85%;
-    height: 100%;
+    
     margin: 0 auto;
     background-color: #f0f0f0;
     
     background-image: url('../images/burger1.jpg');
-   
+    
     background-size: cover;
     background-position: center;
     padding: 30px 0 140px 0;
     position: relative;
+   
+}
 
+.content-2 {
+    width: 100%;
+    
+    background-color: black;
+    opacity: 0.7;
+    margin: 40px 0;
+    padding: 20px 0;
 }
 .nav-bar {
     /*background-color: #c0c0c0;*/
@@ -67,18 +76,7 @@ main {
     height: 600px;
     overflow: hidden;
 }
-.main-left {
-    color: #222222;
-    
-    font-size: 4rem;
-    font-family: 'Piedra', cursive;
-    font-weight: 100;
-    text-align: left;
-    padding: 0 20px;
-    margin: 20px 70px;
-    background-color:rgba(253, 243, 53, 0.1);
-    box-shadow: 5px 5px 8px yellow;
-}
+
 h1 {
     padding: 0;
     margin: 0;
@@ -100,7 +98,7 @@ span.important-text {
     width: 30%;
     text-align: center;
     font-size: 1.6rem;
-    margin: 0 auto;
+    margin: 40px auto;
     color:black;
     background-color: rgba(167, 167, 62, 0.2);
     
@@ -109,14 +107,17 @@ span.important-text {
 .opening {
     font-size: 2rem;
     font-weight: 800;
-    width: 60%;
+    width: 100%;
     align-self: center;
     
 
 }
-
+.map {
+    width: 50%;
+}
 .about {
     /*margin: auto auto 130px auto;*/
+    margin: 50px 80px 100px 80px;
 }
 .table tr:nth-child(even) {
     background-color: rgba(255,255,0,0.3);   
@@ -130,6 +131,7 @@ table{
     background-color: rgba(167, 167, 62, 0.2);
     max-width: 60%;
     box-shadow: 5px 5px 20px yellow;
+    margin: 0 auto;
 }
 caption {
     margin: 20px auto 20px auto;
@@ -187,6 +189,43 @@ caption {
     font-weight: 500;
 }
 
+
+.asdf {
+    text-align: center;
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    display: block;
+    opacity: 0.9;
+}
+
+hr {
+    width: 15%;
+    height: 4px;
+    border-color: red;
+    background-color: red;
+    margin: 50px auto;
+}
+.centered {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.main-header {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+
+.main-text {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+}
+.logo {
+    overflow: hidden;
+}
 @media (max-width: 1050px){
     .container{
         flex-direction: columnm;
@@ -194,6 +233,7 @@ caption {
     .table {
         margin: 0px 0;
         max-width: 100%;
+        height: 100%;
 
         
     }
@@ -204,7 +244,7 @@ caption {
     table {
         margin: 0;
         padding: 0;
-        height: 300px;
+        height: 100%;
         width: 100%;
     }
     .map {
@@ -214,7 +254,7 @@ caption {
     .opening {
         width: 48%;
         margin-right: 0;
-       
+       height:100%;
         
     }
     .findus {
@@ -241,6 +281,24 @@ caption {
     }
 }
 @media (max-width: 670px){
+    .main-header {
+        font-size: 1.8rem;
+    }
+    .main-text {
+        font-size: 1.4rem;
+    }
+    hr {
+        width: 50%;
+    }
+    .centered {
+        margin: 30px auto;
+    }
+    .asdf {
+        margin: 30px auto;
+    }
+    .content-2 {
+        margin-top: 40;
+    }
     .container, .container2 {
         flex-direction: column;
     }
